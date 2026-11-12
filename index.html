@@ -1,0 +1,592 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Botix.pl | Zajęcia z robotyki dla szkół</title>
+  <meta name="description" content="Botix.pl: zajęcia z robotyki dla szkół. Przyjeżdżamy z zestawami LEGO® MINDSTORMS® NXT, uczniowie budują i programują roboty w zespołach po trzy osoby.">
+  <meta name="theme-color" content="#0A5FE6">
+  <link rel="icon" href="assets/logo-znak.svg" type="image/svg+xml">
+  <!-- Czcionki: Google Fonts (licencja SIL Open Font License). Patrz Polityka prywatności, pkt 6. -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="#top" aria-label="Botix.pl, strona główna">
+        <img src="assets/logo-znak.svg" alt="" width="52" height="30">
+        <span class="brand-name">Botix<span class="brand-tld">.pl</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="menu" class="nav" aria-label="Główna nawigacja">
+        <ul>
+          <li><a href="#zajecia">Zajęcia</a></li>
+          <li><a href="#program">Program</a></li>
+          <li><a href="#pomysly">Pomysły na roboty</a></li>
+          <li><a href="projekty.html">Projekty uczniów</a></li>
+          <li><a href="#cennik">Cennik</a></li>
+          <li><a href="#o-nas">O nas</a></li>
+          <li><a href="#faq">Pytania</a></li>
+        </ul>
+        <a class="btn btn-small" href="#zapisy">Zamów zajęcia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc" tabindex="-1">
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="wrap hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow reveal" style="--d:0">Zajęcia z robotyki dla szkół · LEGO® MINDSTORMS® NXT</p>
+          <h1 id="hero-title" class="reveal" style="--d:1">
+            Zbuduj robota.<br>
+            Napisz mu program.<br>
+            <span class="hl">Patrz, jak rusza.</span>
+          </h1>
+          <p class="lead reveal" style="--d:2">
+            Przyjeżdżamy do szkoły z&nbsp;kompletem robotów. Uczniowie w&nbsp;trzyosobowych zespołach konstruują roboty, podłączają silniki i&nbsp;czujniki, a&nbsp;potem uczą je reagować na świat. Krok po kroku i&nbsp;bez nudnej teorii na start.
+          </p>
+          <div class="hero-cta reveal" style="--d:3">
+            <a class="btn" href="#zapisy">Zamów zajęcia dla szkoły</a>
+            <a class="btn btn-ghost" href="#cennik">Zobacz cennik</a>
+          </div>
+          <ul class="facts reveal" style="--d:4" aria-label="Najważniejsze informacje">
+            <li><span class="facts-k">Wiek</span> 9–14 lat</li>
+            <li><span class="facts-k">Grupa</span> 5–15 uczniów</li>
+            <li><span class="facts-k">Czas</span> 2–3 godziny</li>
+            <li><span class="facts-k">Zestaw</span> 1 na 3 osoby</li>
+            <li><span class="facts-k">Gdzie</span> w&nbsp;Waszej szkole</li>
+          </ul>
+        </div>
+
+        <!-- Ekran „kostki” robota z animowaną buźką z logo -->
+        <figure class="brick reveal" style="--d:2" aria-hidden="true">
+          <div class="brick-body">
+            <div class="lcd">
+              <div class="lcd-top"><span>BOTIX.PL</span><span class="batt"></span></div>
+              <svg class="lcd-face" viewBox="0 0 48 26" shape-rendering="crispEdges">
+                <g class="px">
+                  <!-- lewe oko -->
+                  <rect x="12" y="7" width="6" height="4"/><rect x="13" y="6" width="4" height="6"/>
+                  <!-- prawe oko: otwarte -->
+                  <g class="eye-open"><rect x="30" y="7" width="6" height="4"/><rect x="31" y="6" width="4" height="6"/></g>
+                  <!-- prawe oko: mrugnięcie „<” -->
+                  <g class="eye-wink">
+                    <rect x="35" y="5" width="2" height="1"/><rect x="33" y="6" width="2" height="1"/><rect x="31" y="7" width="2" height="1"/>
+                    <rect x="30" y="8" width="2" height="2"/>
+                    <rect x="31" y="10" width="2" height="1"/><rect x="33" y="11" width="2" height="1"/><rect x="35" y="12" width="2" height="1"/>
+                  </g>
+                  <!-- uśmiech -->
+                  <rect x="16" y="16" width="2" height="2"/><rect x="30" y="16" width="2" height="2"/>
+                  <rect x="17" y="18" width="3" height="1"/><rect x="28" y="18" width="3" height="1"/>
+                  <rect x="19" y="19" width="10" height="2"/>
+                </g>
+              </svg>
+              <div class="lcd-bottom"><span class="blink">&gt;</span> RUN PROGRAM</div>
+            </div>
+            <div class="brick-keys">
+              <span class="key key-l"></span><span class="key key-ok"></span><span class="key key-r"></span>
+            </div>
+            <div class="ports">
+              <span>A</span><span>B</span><span>C</span>
+            </div>
+          </div>
+          <ol class="blocks">
+            <li class="blk blk-start" style="--i:0">START</li>
+            <li class="blk" style="--i:1">SILNIK B+C · 2 obr.</li>
+            <li class="blk blk-sense" style="--i:2">CZEKAJ: dotyk</li>
+            <li class="blk" style="--i:3">SKRĘĆ · 90°</li>
+            <li class="blk blk-loop" style="--i:4">POWTÓRZ ×4</li>
+          </ol>
+        </figure>
+      </div>
+    </section>
+
+    <!-- ============ JAK WYGLĄDAJĄ ZAJĘCIA ============ -->
+    <section class="section" id="zajecia" aria-labelledby="zajecia-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">01</span> Zajęcia</p>
+          <h2 id="zajecia-title">Każde zajęcia to jeden pełny obieg inżyniera</h2>
+          <p class="sec-lead">Nie zaczynamy od wykładu. Zaczynamy od problemu do rozwiązania, a&nbsp;teoria przychodzi wtedy, kiedy robot jej potrzebuje.</p>
+        </header>
+
+        <ol class="ports-flow">
+          <li>
+            <span class="port-tag" aria-hidden="true">KROK 1</span>
+            <h3>Budujemy</h3>
+            <p>Zespoły po trzy osoby składają konstrukcję według instrukcji, a&nbsp;z czasem według własnego pomysłu. Uczą się, czym są przekładnie, osie i&nbsp;stabilna rama.</p>
+          </li>
+          <li>
+            <span class="port-tag" aria-hidden="true">KROK 2</span>
+            <h3>Podłączamy</h3>
+            <p>Silniki do portów A–C, czujniki do portów 1–4. Sprawdzamy, co robot „widzi” i&nbsp;„czuje”, zanim powiemy mu, co ma robić.</p>
+          </li>
+          <li>
+            <span class="port-tag" aria-hidden="true">KROK 3</span>
+            <h3>Programujemy</h3>
+            <p>Piszemy program w&nbsp;<strong>NXT Studio</strong> i&nbsp;wgrywamy go do robota. Pętle, warunki i&nbsp;zmienne pojawiają się naturalnie, przy konkretnym zadaniu.</p>
+          </li>
+          <li>
+            <span class="port-tag" aria-hidden="true">KROK 4</span>
+            <h3>Testujemy i poprawiamy</h3>
+            <p>Robot pojechał nie tam, gdzie miał? Świetnie, szukamy przyczyny. Poprawianie błędów to najważniejsza umiejętność, jaką tu ćwiczymy.</p>
+          </li>
+        </ol>
+
+        <aside class="studio" aria-labelledby="studio-title">
+          <div class="studio-badge" aria-hidden="true">
+            <span class="studio-win"><i></i><i></i><i></i></span>
+            <span class="pix studio-name">NXT<br>STUDIO</span>
+            <span class="studio-cursor pix">_</span>
+          </div>
+          <div class="studio-copy">
+            <p class="kicker">Nasze narzędzie</p>
+            <h3 id="studio-title">Programujemy w&nbsp;NXT Studio, programie stworzonym przez Aleksandra</h3>
+            <p>
+              Na zajęciach używamy <strong>NXT Studio</strong>, środowiska do programowania robotów NXT napisanego przez Aleksandra Sobczyka, jednego z&nbsp;prowadzących. Znamy je więc od środka: wiemy, jak działa każda funkcja, i&nbsp;możemy je dopasowywać do tego, czego potrzebują dzieci na zajęciach.
+            </p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- ============ PROGRAM ============ -->
+    <section class="section section-blue" id="program" aria-labelledby="program-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">02</span> Program kursu</p>
+          <h2 id="program-title">Od pierwszego obrotu kółka do własnego robota</h2>
+          <p class="sec-lead">Kurs to trasa z&nbsp;sześcioma przystankami. Na każdym robot uczy się czegoś nowego, a&nbsp;dziecko razem z&nbsp;nim.</p>
+        </header>
+
+        <div class="journey" data-journey>
+          <!-- Droga, po której jedzie robot (dekoracja) -->
+          <div class="road" aria-hidden="true">
+            <span class="road-flag road-start pix">START</span>
+            <span class="road-flag road-end pix">META</span>
+            <div class="road-track"><div class="road-fill"></div></div>
+            <div class="rover">
+              <svg viewBox="0 0 64 42">
+                <rect class="rv-ear" x="2" y="12" width="6" height="16" rx="3"/>
+                <rect class="rv-ear" x="56" y="12" width="6" height="16" rx="3"/>
+                <rect class="rv-head" x="8" y="3" width="48" height="34" rx="10"/>
+                <circle class="rv-eye" cx="24" cy="17" r="4"/>
+                <path class="rv-line" d="M43 13 l-6 4 l6 4"/>
+                <path class="rv-line" d="M25 26 q7 6 14 0"/>
+              </svg>
+            </div>
+          </div>
+
+          <ol class="stops">
+            <li class="stop">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><circle cx="24" cy="24" r="16"/><circle cx="24" cy="24" r="4"/><path d="M24 8 V20 M24 28 V40 M8 24 H20 M28 24 H40"/></svg>
+              </div>
+              <span class="stop-n pix">01</span>
+              <h3>Pierwszy ruch</h3>
+              <p>Silniki, obroty i&nbsp;moc. Robot jedzie prosto, skręca i&nbsp;rysuje kwadrat.</p>
+            </li>
+            <li class="stop">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="10" y="18" width="20" height="16" rx="3"/><path d="M30 26 H36"/><rect x="36" y="20" width="4" height="12" rx="1"/><path d="M42 16 l3 -3 M43 26 h4 M42 36 l3 3"/></svg>
+              </div>
+              <span class="stop-n pix">02</span>
+              <h3>Robot czuje</h3>
+              <p>Czujnik dotyku jako zderzak. Pierwsze „jeśli… to…” w&nbsp;programie.</p>
+            </li>
+            <li class="stop">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M4 24 Q24 6 44 24 Q24 42 4 24 Z"/><circle cx="24" cy="24" r="6"/></svg>
+              </div>
+              <span class="stop-n pix">03</span>
+              <h3>Robot widzi</h3>
+              <p>Czujnik światła i&nbsp;koloru. Jazda po czarnej linii.</p>
+            </li>
+            <li class="stop">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><rect x="4" y="18" width="10" height="12" rx="2"/><path d="M19 17 q5 7 0 14 M26 12 q8 12 0 24 M33 7 q11 17 0 34"/><path d="M42 6 V42"/></svg>
+              </div>
+              <span class="stop-n pix">04</span>
+              <h3>Robot mierzy</h3>
+              <p>Czujnik ultradźwiękowy. Zatrzymanie przed ścianą i&nbsp;omijanie przeszkód.</p>
+            </li>
+            <li class="stop">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M38 18 A15 15 0 1 0 39 30"/><path d="M38 8 V18 H28"/><path d="M19 24 h10 M24 19 v10"/></svg>
+              </div>
+              <span class="stop-n pix">05</span>
+              <h3>Myślenie programisty</h3>
+              <p>Pętle, warunki, zmienne i&nbsp;dzielenie problemu na małe kroki.</p>
+            </li>
+            <li class="stop stop-final">
+              <div class="stop-icon" aria-hidden="true">
+                <svg viewBox="0 0 48 48"><path d="M24 4 l5.5 12 13 1.3 -9.8 8.8 2.9 12.9 -11.6 -6.8 -11.6 6.8 2.9 -12.9 -9.8 -8.8 13 -1.3 Z"/></svg>
+              </div>
+              <span class="stop-n pix">06</span>
+              <h3>Własny robot</h3>
+              <p>Zespół wymyśla, buduje i&nbsp;programuje swojego robota, a&nbsp;potem pokazuje go innym.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ POMYSŁY NA ROBOTY ============ -->
+    <section class="section" id="pomysly" aria-labelledby="pomysly-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">03</span> Pomysły na roboty</p>
+          <h2 id="pomysly-title">Co można zbudować na zajęciach?</h2>
+          <p class="sec-lead">
+            Kilka robotów, które dzieci mogą skonstruować i&nbsp;zaprogramować w&nbsp;trakcie kursu. Zdjęcia robotów zbudowanych naprawdę przez naszych uczniów znajdziesz w&nbsp;zakładce <a href="projekty.html">Projekty uczniów</a>.
+          </p>
+        </header>
+
+        <ul class="projects">
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 120 70"><path class="line" d="M0 52 C 25 52, 30 18, 60 18 S 95 52, 120 40"/><rect class="bot" x="48" y="9" width="18" height="14" rx="3"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Jeździk po linii</h3>
+            <p>Robot podąża za czarną linią na planszy, nie gubiąc jej na zakrętach. Kto przejedzie trasę najszybciej?</p>
+            <ul class="chips"><li>czujnik światła</li><li>pętle</li><li>warunki</li></ul>
+          </li>
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 120 70"><circle class="line" cx="60" cy="35" r="30"/><rect class="bot" x="34" y="27" width="18" height="16" rx="3"/><rect class="bot bot-2" x="68" y="27" width="18" height="16" rx="3"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Robo-sumo</h3>
+            <p>Dwa roboty, jeden ring. Wygrywa ten, który wypchnie przeciwnika poza okrąg i&nbsp;sam przy tym nie wypadnie.</p>
+            <ul class="chips"><li>czujnik ultradźwiękowy</li><li>konstrukcja</li></ul>
+          </li>
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 120 70"><path class="line" d="M10 60 H110 M30 60 V40 M60 60 V40 M90 60 V40"/><circle class="dot" cx="45" cy="18" r="6"/><circle class="dot dot-2" cx="75" cy="22" r="6"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Sorter kolorowych kulek</h3>
+            <p>Maszyna rozpoznaje kolor kulki i&nbsp;kieruje ją do właściwego pojemnika. Mała fabryka na biurku.</p>
+            <ul class="chips"><li>czujnik koloru</li><li>silnik</li><li>zmienne</li></ul>
+          </li>
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 120 70"><rect class="bot" x="16" y="28" width="20" height="16" rx="3"/><path class="line" d="M44 26 q8 10 0 20 M54 20 q12 16 0 32 M64 14 q16 22 0 44"/><rect class="wall" x="96" y="8" width="10" height="56"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Omijacz przeszkód</h3>
+            <p>Robot sam jeździ po pokoju, mierzy odległość do przeszkód i&nbsp;wybiera drogę, żeby w&nbsp;nic nie uderzyć.</p>
+            <ul class="chips"><li>czujnik ultradźwiękowy</li><li>decyzje</li></ul>
+          </li>
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg viewBox="0 0 120 70"><path class="line" d="M10 62 H110"/><g class="tilt"><rect class="bot" x="52" y="10" width="16" height="36" rx="3"/><circle class="dot" cx="60" cy="52" r="9"/></g><path class="line" d="M30 30 q-8 -10 0 -20 M90 30 q8 -10 0 -20"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Balancer na dwóch kołach</h3>
+            <p>Robot stoi pionowo na dwóch kołach i&nbsp;sam łapie równowagę, jak mały segway. Każde przechylenie musi poprawić w&nbsp;ułamku sekundy.</p>
+            <ul class="chips"><li>czujnik światła / żyroskop</li><li>sterowanie</li><li>pętle</li></ul>
+          </li>
+          <li class="project">
+            <div class="thumb" aria-hidden="true">
+              <svg class="shooter" viewBox="0 0 120 70"><path class="ground" d="M2 64 H118"/><path class="line" d="M55 20 Q 80 -4, 101 32"/><circle class="ball" cx="68" cy="13.5" r="3.6"/><circle class="ball ball-2" cx="84" cy="11" r="3.6"/><path class="solid" d="M104 46 V64 M98 64 H110"/><circle class="target" cx="104" cy="35" r="11"/><circle class="target-ring" cx="104" cy="35" r="6.5"/><circle class="target-mid" cx="104" cy="35" r="2.5"/><rect class="track" x="6" y="50" width="42" height="13" rx="6.5"/><circle class="wheel" cx="13" cy="56.5" r="3"/><circle class="wheel" cx="27" cy="56.5" r="3"/><circle class="wheel" cx="41" cy="56.5" r="3"/><rect class="bot" x="10" y="38" width="34" height="12" rx="3"/><g transform="rotate(-32 28 36)"><rect class="barrel" x="27" y="31.5" width="28" height="9" rx="2.5"/><rect class="barrel-tip" x="51" y="30.5" width="5" height="11" rx="1.5"/></g><circle class="bot bot-2" cx="28" cy="36" r="8.5"/></svg>
+            </div>
+            <span class="tag">Pomysł na robota</span>
+            <h3>Robot strzelający kulkami</h3>
+            <p>Wyrzutnia na gąsienicach, która namierza cel i&nbsp;wystrzeliwuje kulki. Kto trafi najwięcej razy z&nbsp;rzędu? Strzelamy wyłącznie lekkimi, plastikowymi kulkami do celów, nigdy w&nbsp;ludzi.</p>
+            <ul class="chips"><li>silnik</li><li>przekładnie</li><li>czujnik ultradźwiękowy</li></ul>
+          </li>
+          <li class="project project-cta">
+            <div class="thumb thumb-cta" aria-hidden="true"><span class="pix">?</span></div>
+            <span class="tag tag-amber">Twój pomysł</span>
+            <h3>Projekt własny</h3>
+            <p>Na koniec kursu uczniowie budują robota według własnego pomysłu. Zdjęcia gotowych robotów pokazujemy w&nbsp;zakładce Projekty uczniów, oczywiście tylko za zgodą rodziców.</p>
+            <a class="link-arrow" href="projekty.html">Zobacz projekty uczniów</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ O NAS ============ -->
+    <section class="section section-tint" id="o-nas" aria-labelledby="onas-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">04</span> O nas</p>
+          <h2 id="onas-title">Dwie osoby, jedna pasja: roboty</h2>
+          <p class="sec-lead">
+            Botix prowadzimy we dwójkę. <span class="todo" title="Do uzupełnienia">[Kilka zdań o was: skąd pomysł, jakie macie doświadczenie z robotyką i z pracą z dziećmi. Piszcie tylko to, co prawdziwe.]</span>
+          </p>
+        </header>
+        <ul class="team">
+          <li class="person">
+            <div class="avatar" aria-hidden="true"><span class="pix">AS</span></div>
+            <div>
+              <h3>Aleksander Sobczyk</h3>
+              <p class="role">Prowadzący zajęcia · twórca NXT Studio</p>
+              <p class="todo" title="Do uzupełnienia">[2–3 zdania: czym się zajmujesz, co lubisz w robotyce.]</p>
+            </div>
+          </li>
+          <li class="person">
+            <div class="avatar avatar-2" aria-hidden="true"><span class="pix">TM</span></div>
+            <div>
+              <h3>Tymon Mikita</h3>
+              <p class="role">Prowadzący zajęcia</p>
+              <p class="todo" title="Do uzupełnienia">[2–3 zdania: czym się zajmujesz, co lubisz w robotyce.]</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ CENNIK ============ -->
+    <section class="section" id="cennik" aria-labelledby="cennik-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">05</span> Cennik</p>
+          <h2 id="cennik-title">Przyjeżdżamy do Waszej szkoły z&nbsp;kompletem robotów</h2>
+          <p class="sec-lead">Prowadzimy zajęcia grupowe dla szkół i&nbsp;placówek. Jedne zajęcia trwają 2–3 godziny, więc jest czas, żeby spokojnie zbudować robota, zaprogramować go i&nbsp;sprawdzić w&nbsp;akcji. Wy zapewniacie salę, a&nbsp;my przyjeżdżamy ze sprzętem i&nbsp;prowadzimy całe zajęcia. Cena jest stała za grupę, nie za ucznia.</p>
+        </header>
+
+        <!-- Wizualizacja: do 15 uczniów = do 5 zestawów × 3 osoby -->
+        <figure class="squad" aria-labelledby="squad-cap">
+          <ul class="squad-teams" aria-hidden="true">
+            <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
+            <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
+            <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
+            <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
+            <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
+          </ul>
+          <figcaption id="squad-cap" class="squad-cap">
+            <span><b class="pix">5–15</b> uczniów w&nbsp;grupie</span>
+            <span class="squad-x" aria-hidden="true">·</span>
+            <span><b class="pix">3</b> osoby na zestaw</span>
+            <span class="squad-x" aria-hidden="true">·</span>
+            <span><b class="pix">2–3</b> godziny zajęć</span>
+          </figcaption>
+        </figure>
+
+        <ul class="plans">
+          <li class="plan">
+            <p class="plan-name">Pojedyncze zajęcia</p>
+            <p class="plan-price">400 <small>zł za zajęcia</small></p>
+            <p class="plan-desc">Jedno spotkanie na start. Idealne na dzień otwarty, dzień dziecka albo żeby sprawdzić, czy robotyka „zaskoczy” w&nbsp;klasie.</p>
+            <ul class="plan-list">
+              <li>2–3 godziny zajęć</li>
+              <li>grupa 5–15 uczniów</li>
+              <li>sprzęt i&nbsp;dojazd w&nbsp;cenie</li>
+              <li>każdy zespół buduje i&nbsp;programuje robota</li>
+            </ul>
+            <a class="btn btn-ghost" href="#zapisy">Zamów pojedyncze zajęcia</a>
+          </li>
+          <li class="plan plan-featured">
+            <span class="plan-badge">Taniej o&nbsp;25%</span>
+            <p class="plan-name">Pakiet 10 zajęć</p>
+            <p class="plan-price">300 <small>zł za zajęcia</small></p>
+            <p class="plan-desc">Regularne spotkania, np. raz w&nbsp;tygodniu. Cały program kursu: od pierwszego obrotu kółka do własnego robota.</p>
+            <ul class="plan-list">
+              <li>10 spotkań po 2–3 godziny</li>
+              <li>razem 3000&nbsp;zł zamiast 4000&nbsp;zł</li>
+              <li>grupa 5–15 uczniów</li>
+              <li>sprzęt i&nbsp;dojazd w&nbsp;cenie</li>
+              <li>6 modułów programu i&nbsp;projekt własny</li>
+            </ul>
+            <a class="btn btn-amber" href="#zapisy">Zamów pakiet 10 zajęć</a>
+          </li>
+          <li class="plan">
+            <p class="plan-name">Kilka grup lub klas</p>
+            <p class="plan-price plan-price-text">Wycena indywidualna</p>
+            <p class="plan-desc">Chcecie zajęć dla kilku klas albo w&nbsp;innym formacie? Napiszcie, ilu macie uczniów i&nbsp;czego szukacie, a&nbsp;przygotujemy ofertę.</p>
+            <ul class="plan-list">
+              <li>kilka grup po 5–15 osób</li>
+              <li>terminy dopasowane do planu lekcji</li>
+            </ul>
+            <a class="btn btn-ghost" href="#zapisy">Poproś o&nbsp;wycenę</a>
+          </li>
+        </ul>
+
+        <div class="included">
+          <div>
+            <h3>W cenie</h3>
+            <ul class="tick-list">
+              <li>zestawy robotów NXT (1 zestaw na 3 uczniów, do 5 zestawów)</li>
+              <li>dojazd do szkoły</li>
+              <li>przygotowanie i&nbsp;poprowadzenie zajęć</li>
+              <li>program NXT Studio</li>
+            </ul>
+          </div>
+          <div>
+            <h3>Po stronie szkoły</h3>
+            <ul class="tick-list tick-list-plain">
+              <li>sala ze stołami i&nbsp;gniazdkami</li>
+              <li><span class="todo" title="Do uzupełnienia">[komputery: 1 na zespół, czy przywozicie własne laptopy?]</span></li>
+              <li>opiekun z&nbsp;ramienia szkoły podczas zajęć</li>
+            </ul>
+          </div>
+        </div>
+        <p class="fineprint">Podane ceny są kwotami końcowymi, bez ukrytych opłat. Prowadzimy działalność nierejestrowaną i&nbsp;nie jesteśmy płatnikiem VAT, więc do ceny nic nie doliczamy. Na życzenie wystawiamy rachunek na szkołę. Zasady odwoływania i&nbsp;przekładania zajęć: <a href="rezygnacja-i-zwroty.html">Odwołanie zajęć i&nbsp;zwroty</a>.</p>
+      </div>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="section section-tint" id="faq" aria-labelledby="faq-title">
+      <div class="wrap narrow">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">06</span> Pytania</p>
+          <h2 id="faq-title">Częste pytania szkół i&nbsp;rodziców</h2>
+        </header>
+        <div class="faq">
+          <details>
+            <summary>Jak wyglądają zajęcia w&nbsp;szkole?</summary>
+            <p>Przyjeżdżamy z&nbsp;zestawami robotów: jeden na każdą trójkę uczniów. Zajęcia trwają 2–3 godziny. Grupa od 5 do 15 uczniów dzieli się na zespoły po trzy osoby i&nbsp;każdy zespół buduje i&nbsp;programuje swojego robota. Na koniec zajęć roboty wykonują zadanie, a&nbsp;my sprzątamy i&nbsp;zabieramy sprzęt.</p>
+          </details>
+          <details>
+            <summary>Dlaczego trzy osoby na zestaw?</summary>
+            <p>Bo robotyka to praca zespołowa. W&nbsp;trójce jedna osoba buduje, druga programuje, trzecia testuje, a&nbsp;co jakiś czas się zamieniają. Każdy ma co robić, a&nbsp;przy okazji uczy się współpracy.</p>
+          </details>
+          <details>
+            <summary>Czy uczniowie muszą umieć programować?</summary>
+            <p>Nie. Programujemy w&nbsp;NXT Studio (programie stworzonym przez Aleksandra, jednego z&nbsp;prowadzących) i&nbsp;zaczynamy od najprostszych poleceń. Pierwszy program, który porusza robotem, powstaje już na pierwszych zajęciach.</p>
+          </details>
+          <details>
+            <summary>Dlaczego właśnie NXT?</summary>
+            <div class="faq-body">
+              <p>Bo to jedna z&nbsp;najlepszych platform do nauki robotyki, jakie powstały. Kilka powodów:</p>
+              <ul>
+                <li><strong>Mnóstwo czujników.</strong> Oprócz oryginalnych czujników dotyku, światła, koloru, dźwięku i&nbsp;odległości (ultradźwiękowego) NXT obsługuje dziesiątki czujników innych producentów: żyroskop, kompas, akcelerometr, czujnik podczerwieni i&nbsp;wiele innych. Mało który zestaw daje dzieciom tyle sposobów, żeby robot „poczuł” świat.</li>
+                <li><strong>Silniki, które same się mierzą.</strong> Każdy silnik ma wbudowany czujnik obrotu, więc robot wie, ile dokładnie przejechał i&nbsp;o&nbsp;ile się obrócił.</li>
+                <li><strong>Ogromna społeczność.</strong> Przez lata entuzjaści z&nbsp;całego świata stworzyli tysiące projektów, instrukcji, forów i&nbsp;poradników. Na prawie każdy problem ktoś już znalazł rozwiązanie, a&nbsp;pomysłów na kolejne roboty nigdy nie brakuje.</li>
+                <li><strong>Pancerna konstrukcja.</strong> Kostki NXT przetrwały tysiące godzin w&nbsp;salach lekcyjnych. Upadek ze stołu to dla nich codzienność.</li>
+                <li><strong>Prawdziwe podstawy.</strong> Silniki, czujniki, pętle i&nbsp;warunki działają tu dokładnie tak samo jak w&nbsp;nowszych zestawach i&nbsp;w&nbsp;„dorosłej” robotyce. Uczymy rzeczy, które zostają na zawsze.</li>
+                <li><strong>NXT Studio.</strong> Programujemy w&nbsp;narzędziu stworzonym przez Aleksandra, więc możemy je dopasować dokładnie do potrzeb uczniów.</li>
+              </ul>
+            </div>
+          </details>
+          <details>
+            <summary>Co szkoła musi zapewnić?</summary>
+            <p>Salę ze stołami i&nbsp;dostępem do gniazdek oraz opiekuna z&nbsp;ramienia szkoły. <span class="todo" title="Do uzupełnienia">[Komputery: czy przywozicie własne laptopy, czy korzystacie z pracowni szkoły?]</span></p>
+          </details>
+          <details>
+            <summary>Co, jeśli uczeń zepsuje lub zgubi sprzęt?</summary>
+            <p>Zwykłe zużycie nic nie kosztuje. Za zniszczony lub zgubiony element płaci się według stałego cennika, który jest w&nbsp;<a href="regulamin.html#z1">Załączniku nr&nbsp;1 do regulaminu</a>, więc z&nbsp;góry wiadomo, ile co kosztuje. Na początku zajęć omawiamy z&nbsp;uczniami zasady bezpiecznej pracy ze sprzętem.</p>
+          </details>
+          <details>
+            <summary>Co, jeśli trzeba przełożyć lub odwołać zajęcia?</summary>
+            <p>Zasady opisujemy w&nbsp;dokumencie <a href="rezygnacja-i-zwroty.html">Odwołanie zajęć i&nbsp;zwroty</a>. Jeśli to my musimy odwołać zajęcia, proponujemy nowy termin albo zwracamy pieniądze.</p>
+          </details>
+          <details>
+            <summary>Czy zdjęcia uczniów pojawią się w&nbsp;internecie?</summary>
+            <p>Tylko za osobną, pisemną zgodą rodzica lub opiekuna danego ucznia. Bez niej nie publikujemy żadnych zdjęć ani filmów, na których widać dzieci. Zgodę można wycofać w&nbsp;dowolnym momencie.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ZAMÓWIENIE ============ -->
+    <section class="section section-blue" id="zapisy" aria-labelledby="zapisy-title">
+      <div class="wrap zapisy-grid">
+        <header class="sec-head">
+          <p class="kicker"><span class="pix">07</span> Zamówienie</p>
+          <h2 id="zapisy-title">Zaproście nas do szkoły</h2>
+          <p class="sec-lead">Wypełnij formularz, a&nbsp;przygotujemy wiadomość w&nbsp;Twoim programie pocztowym. Nic nie jest wysyłane automatycznie: sam/sama decydujesz, czy ją wysłać. Odpiszemy z&nbsp;propozycją terminów i&nbsp;dokładną wyceną.</p>
+          <p class="sec-lead">Wolisz bez formularza? Napisz na
+            <a class="mail" href="mailto:kontakt@botix.pl">kontakt@botix.pl</a><span class="todo" title="Sprawdź adres">*</span>
+          </p>
+        </header>
+
+        <form class="form" id="zapis-form" action="mailto:kontakt@botix.pl" method="post" enctype="text/plain" novalidate>
+          <div class="field">
+            <label for="f-szkola">Nazwa szkoły lub placówki i&nbsp;miejscowość</label>
+            <input id="f-szkola" name="szkola" type="text" autocomplete="organization" required>
+          </div>
+          <div class="field">
+            <label for="f-imie">Imię osoby kontaktowej</label>
+            <input id="f-imie" name="imie" type="text" autocomplete="given-name" required>
+          </div>
+          <div class="field">
+            <label for="f-email">Adres e-mail do odpowiedzi</label>
+            <input id="f-email" name="email" type="email" autocomplete="email" required>
+          </div>
+          <div class="field-row">
+            <div class="field">
+              <label for="f-oferta">Interesuje nas</label>
+              <select id="f-oferta" name="oferta" required>
+                <option value="">Wybierz…</option>
+                <option>Warsztat jednorazowy</option>
+                <option>Cykl zajęć</option>
+                <option>Kilka grup lub klas</option>
+                <option>Jeszcze nie wiemy</option>
+              </select>
+            </div>
+            <div class="field">
+              <label for="f-klasy">Klasy / wiek uczniów</label>
+              <input id="f-klasy" name="klasy" type="text" placeholder="np. klasy 4–6" required>
+            </div>
+          </div>
+          <div class="field">
+            <label for="f-msg">Wiadomość <span class="opt">(opcjonalnie)</span></label>
+            <textarea id="f-msg" name="wiadomosc" rows="4" placeholder="Np. liczba uczniów, preferowane dni i godziny, pytania"></textarea>
+          </div>
+          <div class="check">
+            <input id="f-zgoda" name="zgoda" type="checkbox" required>
+            <label for="f-zgoda">
+              Przeczytałem/am <a href="polityka-prywatnosci.html">politykę prywatności</a> i&nbsp;rozumiem, że podane dane posłużą tylko do odpowiedzi na to zapytanie.
+            </label>
+          </div>
+          <p class="form-error" id="form-error" role="alert" hidden></p>
+          <button class="btn btn-amber" type="submit">Przygotuj e-mail z&nbsp;zapytaniem</button>
+          <p class="hint">Kliknięcie otworzy Twój program pocztowy z&nbsp;gotową wiadomością do Botix.pl. Nie zapisujemy danych z&nbsp;formularza na stronie.</p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-grid">
+      <div>
+        <a class="brand brand-foot" href="#top" aria-label="Botix.pl, na górę strony">
+          <img src="assets/logo-znak.svg" alt="" width="52" height="30">
+          <span class="brand-name">Botix<span class="brand-tld">.pl</span></span>
+        </a>
+        <p class="foot-small">Zajęcia z robotyki dla dzieci.</p>
+      </div>
+      <div>
+        <h2 class="foot-h">Usługodawca</h2>
+        <address>
+          Aleksander Sobczyk (Botix)<br>
+          <span class="todo" title="Do uzupełnienia">[ulica, nr, kod pocztowy, miasto]</span><br>
+          Działalność nierejestrowana<br>
+          <a href="mailto:kontakt@botix.pl">kontakt@botix.pl</a>
+        </address>
+      </div>
+      <nav aria-label="Dokumenty">
+        <h2 class="foot-h">Dokumenty</h2>
+        <ul class="foot-links">
+          <li><a href="regulamin.html">Regulamin</a></li>
+          <li><a href="polityka-prywatnosci.html">Polityka prywatności</a></li>
+          <li><a href="polityka-cookies.html">Polityka cookies</a></li>
+          <li><a href="rezygnacja-i-zwroty.html">Odwołanie zajęć i&nbsp;zwroty</a></li>
+          <li><a href="polityka-prywatnosci.html#prawa">Usunięcie Twoich danych</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="wrap foot-legal">
+      <p>LEGO®, MINDSTORMS® i&nbsp;logo LEGO są znakami towarowymi Grupy LEGO, która nie sponsoruje, nie autoryzuje ani nie wspiera tej strony ani zajęć Botix.</p>
+      <p>© <span id="rok">2026</span> Botix.pl · Strona nie używa plików cookies ani narzędzi analitycznych.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

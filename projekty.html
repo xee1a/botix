@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="pl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projekty uczniów | Botix.pl</title>
+  <meta name="description" content="Zdjęcia robotów zbudowanych i zaprogramowanych przez uczniów na zajęciach Botix.">
+  <meta name="theme-color" content="#0A5FE6">
+  <link rel="icon" href="assets/logo-znak.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,600;0,700;1,400&family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Silkscreen&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#tresc">Przejdź do treści</a>
+
+  <header class="site-header">
+    <div class="wrap header-row">
+      <a class="brand" href="index.html" aria-label="Botix.pl, strona główna">
+        <img src="assets/logo-znak.svg" alt="" width="52" height="30">
+        <span class="brand-name">Botix<span class="brand-tld">.pl</span></span>
+      </a>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="nav-toggle-bars" aria-hidden="true"></span>
+        <span class="sr-only">Menu</span>
+      </button>
+      <nav id="menu" class="nav" aria-label="Główna nawigacja">
+        <ul>
+          <li><a href="index.html#zajecia">Zajęcia</a></li>
+          <li><a href="index.html#program">Program</a></li>
+          <li><a href="index.html#pomysly">Pomysły na roboty</a></li>
+          <li><a href="projekty.html" aria-current="page">Projekty uczniów</a></li>
+          <li><a href="index.html#cennik">Cennik</a></li>
+          <li><a href="index.html#o-nas">O nas</a></li>
+          <li><a href="index.html#faq">Pytania</a></li>
+        </ul>
+        <a class="btn btn-small" href="index.html#zapisy">Zamów zajęcia</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="tresc" tabindex="-1">
+    <section class="section gallery-page" aria-labelledby="gal-title">
+      <div class="wrap">
+        <header class="sec-head">
+          <p class="kicker reveal" style="--d:0"><span class="pix">FOTO</span> Projekty uczniów</p>
+          <h1 id="gal-title" class="gal-title reveal" style="--d:1">Roboty zbudowane na zajęciach</h1>
+          <p class="sec-lead reveal" style="--d:2">
+            Prawdziwe roboty, które nasi uczniowie skonstruowali i&nbsp;zaprogramowali w&nbsp;NXT Studio. Każdy projekt podpisujemy tylko imieniem i&nbsp;wiekiem autora.
+          </p>
+        </header>
+
+        <!--
+          JAK DODAĆ ZDJĘCIE PROJEKTU:
+          1. Wrzuć zdjęcie do folderu assets/projekty/ (najlepiej .jpg, ok. 1200 px szerokości).
+          2. Skopiuj blok <li class="shot"> poniżej do listy .gallery i zmień treść.
+          3. Gdy dodasz pierwsze zdjęcie, usuń blok <li class="gallery-empty">.
+          Publikuj WYŁĄCZNIE za pisemną zgodą rodzica; podpisuj tylko imieniem (lub inicjałem) i wiekiem.
+
+          <li class="shot">
+            <figure>
+              <img src="assets/projekty/nazwa.jpg" alt="Co widać na zdjęciu, np. niebieski robot na dwóch kołach balansuje na stole" loading="lazy">
+              <figcaption>
+                <h2>Nazwa robota</h2>
+                <p class="by">Ola, 11 lat</p>
+                <p>Krótki opis: co robi robot i co było najtrudniejsze.</p>
+              </figcaption>
+            </figure>
+          </li>
+        -->
+
+        <ul class="gallery">
+          <li class="gallery-empty reveal" style="--d:3">
+            <div class="cam" aria-hidden="true">
+              <svg viewBox="0 0 64 48"><rect x="4" y="12" width="56" height="32" rx="6"/><path d="M20 12 l5 -8 h14 l5 8"/><circle cx="32" cy="28" r="10"/><circle cx="32" cy="28" r="4"/></svg>
+            </div>
+            <h2>Pierwsze zdjęcia już wkrótce</h2>
+            <p>Galeria zapełni się po starcie zajęć. Zanim to nastąpi, zobacz, <a href="index.html#pomysly">jakie roboty można zbudować</a>.</p>
+          </li>
+        </ul>
+
+        <p class="note">
+          <strong>Prywatność dzieci.</strong> Zdjęcia i&nbsp;filmy publikujemy wyłącznie za pisemną zgodą rodzica lub opiekuna. Projekty podpisujemy tylko imieniem i&nbsp;wiekiem. Zgodę można wycofać w&nbsp;każdej chwili, a&nbsp;wtedy usuwamy materiał.
+          <a href="polityka-prywatnosci.html#wizerunek">Więcej w&nbsp;polityce prywatności</a>.
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap foot-legal" style="border:0;margin:0;padding:0">
+      <p><a href="regulamin.html">Regulamin</a> · <a href="polityka-prywatnosci.html">Polityka prywatności</a> · <a href="polityka-cookies.html">Polityka cookies</a> · <a href="rezygnacja-i-zwroty.html">Odwołanie zajęć i&nbsp;zwroty</a></p>
+      <p>LEGO® i&nbsp;MINDSTORMS® są znakami towarowymi Grupy LEGO, która nie sponsoruje, nie autoryzuje ani nie wspiera tej strony.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>

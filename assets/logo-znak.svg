@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 70" role="img" aria-labelledby="t">
+  <title id="t">Botix – znak: uśmiechnięta, mrugająca głowa robota</title>
+  <g fill="none" stroke="#0A5FE6" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <rect x="17" y="3.5" width="86" height="63" rx="15"/>
+    <path d="M71 26 l10 -6 M71 26 l10 6"/>
+    <path d="M47 44 q13 11 26 0"/>
+  </g>
+  <circle cx="45" cy="26" r="7" fill="#0A5FE6"/>
+  <rect x="2" y="21" width="12" height="28" rx="6" fill="#0A5FE6"/>
+  <rect x="106" y="21" width="12" height="28" rx="6" fill="#0A5FE6"/>
+</svg>
