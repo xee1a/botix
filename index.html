@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Botix.pl | Zajęcia z robotyki dla szkół</title>
-  <meta name="description" content="Botix.pl: zajęcia z robotyki dla szkół. Przyjeżdżamy z zestawami LEGO® MINDSTORMS® NXT, uczniowie budują i programują roboty w zespołach po trzy osoby.">
+  <meta name="description" content="Botix.pl: zajęcia z robotyki dla szkół. Przyjeżdżamy z zestawami LEGO® MINDSTORMS® NXT, uczniowie budują i programują roboty w zespołach po 2–3 osoby.">
   <meta name="theme-color" content="#0A5FE6">
   <link rel="icon" href="assets/logo-znak.svg" type="image/svg+xml">
   <!-- Czcionki: Google Fonts (licencja SIL Open Font License). Patrz Polityka prywatności, pkt 6. -->
@@ -54,7 +54,7 @@
             <span class="hl">Patrz, jak rusza.</span>
           </h1>
           <p class="lead reveal" style="--d:2">
-            Przyjeżdżamy do szkoły z&nbsp;kompletem robotów. Uczniowie w&nbsp;trzyosobowych zespołach konstruują roboty, podłączają silniki i&nbsp;czujniki, a&nbsp;potem uczą je reagować na świat. Krok po kroku i&nbsp;bez nudnej teorii na start.
+            Przyjeżdżamy do szkoły z&nbsp;zestawami do budowania robotów. Uczniowie w&nbsp;zespołach po 2–3 osoby konstruują roboty, podłączają silniki i&nbsp;czujniki, a&nbsp;potem uczą je reagować na świat. Krok po kroku i&nbsp;bez nudnej teorii na start.
           </p>
           <div class="hero-cta reveal" style="--d:3">
             <a class="btn" href="#zapisy">Zamów zajęcia dla szkoły</a>
@@ -63,9 +63,9 @@
           <ul class="facts reveal" style="--d:4" aria-label="Najważniejsze informacje">
             <li><span class="facts-k">Wiek</span> 9–14 lat</li>
             <li><span class="facts-k">Grupa</span> 5–15 uczniów</li>
-            <li><span class="facts-k">Czas</span> 2–3 godziny</li>
-            <li><span class="facts-k">Zestaw</span> 1 na 3 osoby</li>
-            <li><span class="facts-k">Gdzie</span> w&nbsp;Waszej szkole</li>
+            <li><span class="facts-k">Czas</span> 2,5–3 godziny</li>
+            <li><span class="facts-k">Zestaw</span> 1 na 2–3 osoby</li>
+            <li><span class="facts-k">Gdzie</span> w&nbsp;Waszej szkole we Wrocławiu</li>
           </ul>
         </div>
 
@@ -125,7 +125,7 @@
           <li>
             <span class="port-tag" aria-hidden="true">KROK 1</span>
             <h3>Budujemy</h3>
-            <p>Zespoły po trzy osoby składają konstrukcję według instrukcji, a&nbsp;z czasem według własnego pomysłu. Uczą się, czym są przekładnie, osie i&nbsp;stabilna rama.</p>
+            <p>Zespoły po 2–3 osoby składają konstrukcję według instrukcji i&nbsp;mogą wypróbować własne pomysły. Uczą się, czym są przekładnie, osie i&nbsp;stabilna rama.</p>
           </li>
           <li>
             <span class="port-tag" aria-hidden="true">KROK 2</span>
@@ -144,12 +144,7 @@
           </li>
         </ol>
 
-        <aside class="studio" aria-labelledby="studio-title">
-          <div class="studio-badge" aria-hidden="true">
-            <span class="studio-win"><i></i><i></i><i></i></span>
-            <span class="pix studio-name">NXT<br>STUDIO</span>
-            <span class="studio-cursor pix">_</span>
-          </div>
+        <aside class="studio" id="nxt-studio" aria-labelledby="studio-title">
           <div class="studio-copy">
             <p class="kicker">Nasze narzędzie</p>
             <h3 id="studio-title">Programujemy w&nbsp;NXT Studio, programie stworzonym przez Aleksandra</h3>
@@ -157,6 +152,47 @@
               Na zajęciach używamy <strong>NXT Studio</strong>, środowiska do programowania robotów NXT napisanego przez Aleksandra Sobczyka, jednego z&nbsp;prowadzących. Znamy je więc od środka: wiemy, jak działa każda funkcja, i&nbsp;możemy je dopasowywać do tego, czego potrzebują dzieci na zajęciach.
             </p>
           </div>
+          <figure class="studio-preview" role="img" aria-label="Podgląd edytora NXT Studio. W palecie po lewej wyróżniają się kolejno bloki startowe i bloki silników. Po prawej widać przykładowy program.">
+            <div class="studio-window" aria-hidden="true">
+              <div class="studio-toolbar">
+                <span class="studio-brand"><span>▣</span> NXT Studio</span>
+                <span class="studio-tab">Program</span>
+              </div>
+              <div class="studio-project">Mój robot <span>4 bloki</span></div>
+              <div class="studio-workbench">
+                <ul class="studio-categories">
+                  <li class="studio-category-current" style="--category-color:#ffb022">Start</li>
+                  <li style="--category-color:#468fff">Silniki</li>
+                  <li style="--category-color:#e767a4">Ruch</li>
+                  <li style="--category-color:#21c1da">Czujniki</li>
+                  <li style="--category-color:#ff964c">Sterowanie</li>
+                  <li style="--category-color:#a377f8">Dźwięk</li>
+                </ul>
+                <div class="studio-palette">
+                  <p>Start</p>
+                  <ul class="studio-blocks">
+                    <li class="studio-block studio-block-start" style="--step:0"><span>⚑</span> po uruchomieniu programu</li>
+                    <li class="studio-block studio-block-start" style="--step:1"><span>◇</span> gdy czujnik dotyku <b>1</b> zostanie wciśnięty</li>
+                    <li class="studio-block studio-block-start" style="--step:2"><span>◷</span> gdy stoper przekroczy <b>5</b> s</li>
+                  </ul>
+                  <p>Silniki</p>
+                  <ul class="studio-blocks">
+                    <li class="studio-block studio-block-motor" style="--step:3"><span>↗</span> jedź <b>B + C</b> z mocą <b>75%</b></li>
+                    <li class="studio-block studio-block-motor" style="--step:4"><span>⊕</span> włącz silnik <b>A</b> z mocą <b>75%</b></li>
+                    <li class="studio-block studio-block-motor" style="--step:5"><span>□</span> zatrzymaj silniki <b>A+B+C</b></li>
+                  </ul>
+                </div>
+                <div class="studio-canvas">
+                  <ol class="studio-blocks">
+                    <li class="studio-block studio-block-start"><span>⚑</span> po uruchomieniu programu</li>
+                    <li class="studio-block studio-block-motor"><span>↗</span> jedź <b>B + C</b> z mocą <b>75%</b></li>
+                    <li class="studio-block studio-block-wait"><span>◇</span> czekaj, aż czujnik dotyku <b>1</b> zostanie wciśnięty</li>
+                    <li class="studio-block studio-block-motor"><span>□</span> zatrzymaj silniki <b>A+B+C</b></li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </figure>
         </aside>
       </div>
     </section>
@@ -235,7 +271,7 @@
               </div>
               <span class="stop-n pix">06</span>
               <h3>Własny robot</h3>
-              <p>Zespół wymyśla, buduje i&nbsp;programuje swojego robota, a&nbsp;potem pokazuje go innym.</p>
+              <p>Chętne zespoły mogą zaprojektować, zbudować i&nbsp;zaprogramować własnego robota, jeśli pozwoli na to tempo pracy.</p>
             </li>
           </ol>
         </div>
@@ -256,7 +292,13 @@
         <ul class="projects">
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg viewBox="0 0 120 70"><path class="line" d="M0 52 C 25 52, 30 18, 60 18 S 95 52, 120 40"/><rect class="bot" x="48" y="9" width="18" height="14" rx="3"/></svg>
+              <svg viewBox="0 0 120 70">
+                <path id="line-follower-route" class="line" d="M10 52 C 30 52, 34 18, 60 18 S 91 51, 110 40"/>
+                <rect class="bot motion-still" x="51" y="11" width="18" height="14" rx="3"/>
+                <rect class="bot motion-live line-follower" x="-9" y="-7" width="18" height="14" rx="3">
+                  <animateMotion dur="3.6s" repeatCount="indefinite" rotate="auto"><mpath href="#line-follower-route"/></animateMotion>
+                </rect>
+              </svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Jeździk po linii</h3>
@@ -265,7 +307,7 @@
           </li>
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg viewBox="0 0 120 70"><circle class="line" cx="60" cy="35" r="30"/><rect class="bot" x="34" y="27" width="18" height="16" rx="3"/><rect class="bot bot-2" x="68" y="27" width="18" height="16" rx="3"/></svg>
+              <svg viewBox="0 0 120 70"><circle class="line" cx="60" cy="35" r="30"/><rect class="bot sumo-left" x="34" y="27" width="18" height="16" rx="3"/><rect class="bot bot-2 sumo-right" x="68" y="27" width="18" height="16" rx="3"/></svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Robo-sumo</h3>
@@ -274,7 +316,12 @@
           </li>
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg viewBox="0 0 120 70"><path class="line" d="M10 60 H110 M30 60 V40 M60 60 V40 M90 60 V40"/><circle class="dot" cx="45" cy="18" r="6"/><circle class="dot dot-2" cx="75" cy="22" r="6"/></svg>
+              <svg class="sorter" viewBox="0 0 120 70">
+                <path class="line" d="M60 8 V28 L30 40 V53 M60 28 L90 40 V53"/>
+                <path class="sorter-bin" d="M16 49 V63 H44 V49 M76 49 V63 H104 V49"/>
+                <circle class="sorter-ball sorter-blue" cx="30" cy="56" r="5"/>
+                <circle class="sorter-ball sorter-amber" cx="90" cy="56" r="5"/>
+              </svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Sorter kolorowych kulek</h3>
@@ -283,7 +330,7 @@
           </li>
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg viewBox="0 0 120 70"><rect class="bot" x="16" y="28" width="20" height="16" rx="3"/><path class="line" d="M44 26 q8 10 0 20 M54 20 q12 16 0 32 M64 14 q16 22 0 44"/><rect class="wall" x="96" y="8" width="10" height="56"/></svg>
+              <svg viewBox="0 0 120 70"><rect class="bot obstacle-bot" x="16" y="28" width="20" height="16" rx="3"/><path class="line" d="M44 26 q8 10 0 20 M54 20 q12 16 0 32 M64 14 q16 22 0 44"/><rect class="wall" x="96" y="8" width="10" height="56"/></svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Omijacz przeszkód</h3>
@@ -292,7 +339,7 @@
           </li>
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg viewBox="0 0 120 70"><path class="line" d="M10 62 H110"/><g class="tilt"><rect class="bot" x="52" y="10" width="16" height="36" rx="3"/><circle class="dot" cx="60" cy="52" r="9"/></g><path class="line" d="M30 30 q-8 -10 0 -20 M90 30 q8 -10 0 -20"/></svg>
+              <svg viewBox="0 0 120 70"><path class="line" d="M10 62 H110"/><g class="tilt"><path class="balancer-axle" d="M60 43 V52"/><rect class="bot" x="52" y="10" width="16" height="36" rx="3"/></g><circle class="balancer-wheel" cx="60" cy="52" r="9"/><circle class="balancer-hub" cx="60" cy="52" r="3"/><path class="line" d="M30 30 q-8 -10 0 -20 M90 30 q8 -10 0 -20"/></svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Balancer na dwóch kołach</h3>
@@ -301,7 +348,22 @@
           </li>
           <li class="project">
             <div class="thumb" aria-hidden="true">
-              <svg class="shooter" viewBox="0 0 120 70"><path class="ground" d="M2 64 H118"/><path class="line" d="M55 20 Q 80 -4, 101 32"/><circle class="ball" cx="68" cy="13.5" r="3.6"/><circle class="ball ball-2" cx="84" cy="11" r="3.6"/><path class="solid" d="M104 46 V64 M98 64 H110"/><circle class="target" cx="104" cy="35" r="11"/><circle class="target-ring" cx="104" cy="35" r="6.5"/><circle class="target-mid" cx="104" cy="35" r="2.5"/><rect class="track" x="6" y="50" width="42" height="13" rx="6.5"/><circle class="wheel" cx="13" cy="56.5" r="3"/><circle class="wheel" cx="27" cy="56.5" r="3"/><circle class="wheel" cx="41" cy="56.5" r="3"/><rect class="bot" x="10" y="38" width="34" height="12" rx="3"/><g transform="rotate(-32 28 36)"><rect class="barrel" x="27" y="31.5" width="28" height="9" rx="2.5"/><rect class="barrel-tip" x="51" y="30.5" width="5" height="11" rx="1.5"/></g><circle class="bot bot-2" cx="28" cy="36" r="8.5"/></svg>
+              <svg class="shooter" viewBox="0 0 120 70">
+                <path class="ground" d="M2 64 H118"/>
+                <path id="shooter-route" class="line" d="M52 21 Q 80 -4, 104 35"/>
+                <path class="solid" d="M104 46 V64 M98 64 H110"/>
+                <circle class="target" cx="104" cy="35" r="11"/><circle class="target-ring" cx="104" cy="35" r="6.5"/><circle class="target-mid" cx="104" cy="35" r="2.5"/>
+                <rect class="track" x="6" y="50" width="42" height="13" rx="6.5"/>
+                <circle class="wheel" cx="13" cy="56.5" r="3"/><circle class="wheel" cx="27" cy="56.5" r="3"/><circle class="wheel" cx="41" cy="56.5" r="3"/>
+                <rect class="bot" x="10" y="38" width="34" height="12" rx="3"/>
+                <g transform="rotate(-32 28 36)"><rect class="barrel" x="27" y="31.5" width="28" height="9" rx="2.5"/><rect class="barrel-tip" x="51" y="30.5" width="5" height="11" rx="1.5"/></g>
+                <circle class="bot bot-2" cx="28" cy="36" r="8.5"/>
+                <circle class="ball motion-still" cx="78" cy="12.5" r="3.6"/>
+                <circle class="ball motion-live" cx="0" cy="0" r="3.6">
+                  <animateMotion dur="2s" repeatCount="indefinite" calcMode="linear" keyPoints="0;1;1" keyTimes="0;0.48;1"><mpath href="#shooter-route"/></animateMotion>
+                  <animate attributeName="opacity" dur="2s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;0.06;0.48;0.58;1"/>
+                </circle>
+              </svg>
             </div>
             <span class="tag">Pomysł na robota</span>
             <h3>Robot strzelający kulkami</h3>
@@ -312,7 +374,7 @@
             <div class="thumb thumb-cta" aria-hidden="true"><span class="pix">?</span></div>
             <span class="tag tag-amber">Twój pomysł</span>
             <h3>Projekt własny</h3>
-            <p>Na koniec kursu uczniowie budują robota według własnego pomysłu. Zdjęcia gotowych robotów pokazujemy w&nbsp;zakładce Projekty uczniów, oczywiście tylko za zgodą rodziców.</p>
+            <p>Niektóre zespoły pod koniec kursu próbują zbudować robota według własnego pomysłu. To dodatkowe wyzwanie dla chętnych, jeśli wystarczy czasu. Zdjęcia gotowych robotów pokazujemy w&nbsp;zakładce Projekty uczniów tylko za zgodą rodziców.</p>
             <a class="link-arrow" href="projekty.html">Zobacz projekty uczniów</a>
           </li>
         </ul>
@@ -326,7 +388,7 @@
           <p class="kicker"><span class="pix">04</span> O nas</p>
           <h2 id="onas-title">Dwie osoby, jedna pasja: roboty</h2>
           <p class="sec-lead">
-            Botix prowadzimy we dwójkę. <span class="todo" title="Do uzupełnienia">[Kilka zdań o was: skąd pomysł, jakie macie doświadczenie z robotyką i z pracą z dziećmi. Piszcie tylko to, co prawdziwe.]</span>
+            Jesteśmy uczniami liceum i&nbsp;fascynuje nas robotyka. Lubimy majsterkować, programować i&nbsp;sprawdzać w&nbsp;praktyce to, czego uczymy się na fizyce. Tak powstał Botix: chcemy pokazać innym, ile frajdy daje zbudowanie robota, który rusza dzięki programowi napisanemu własnymi rękami.
           </p>
         </header>
         <ul class="team">
@@ -335,15 +397,15 @@
             <div>
               <h3>Aleksander Sobczyk</h3>
               <p class="role">Prowadzący zajęcia · twórca NXT Studio</p>
-              <p class="todo" title="Do uzupełnienia">[2–3 zdania: czym się zajmujesz, co lubisz w robotyce.]</p>
+              <p>Stworzyłem NXT Studio, żeby łatwiej było zacząć programować roboty. Najbardziej lubię moment, gdy kilka linijek kodu wprawia robota w&nbsp;ruch.</p>
             </div>
           </li>
           <li class="person">
             <div class="avatar avatar-2" aria-hidden="true"><span class="pix">TM</span></div>
             <div>
               <h3>Tymon Mikita</h3>
-              <p class="role">Prowadzący zajęcia</p>
-              <p class="todo" title="Do uzupełnienia">[2–3 zdania: czym się zajmujesz, co lubisz w robotyce.]</p>
+              <p class="role">Współprowadzący zajęcia</p>
+              <p>Lubię majsterkować i&nbsp;sprawdzać, jak fizyka działa w&nbsp;praktyce. Na zajęciach pomagam zespołom budować, testować i&nbsp;poprawiać ich roboty.</p>
             </div>
           </li>
         </ul>
@@ -355,11 +417,11 @@
       <div class="wrap">
         <header class="sec-head">
           <p class="kicker"><span class="pix">05</span> Cennik</p>
-          <h2 id="cennik-title">Przyjeżdżamy do Waszej szkoły z&nbsp;kompletem robotów</h2>
-          <p class="sec-lead">Prowadzimy zajęcia grupowe dla szkół i&nbsp;placówek. Jedne zajęcia trwają 2–3 godziny, więc jest czas, żeby spokojnie zbudować robota, zaprogramować go i&nbsp;sprawdzić w&nbsp;akcji. Wy zapewniacie salę, a&nbsp;my przyjeżdżamy ze sprzętem i&nbsp;prowadzimy całe zajęcia. Cena jest stała za grupę, nie za ucznia.</p>
+          <h2 id="cennik-title">Przyjeżdżamy do Waszej szkoły z&nbsp;zestawami do budowania robotów</h2>
+          <p class="sec-lead">Prowadzimy zajęcia grupowe dla szkół i&nbsp;placówek. Jedne zajęcia trwają 2,5–3 godziny, więc jest czas, żeby spokojnie zbudować robota, zaprogramować go i&nbsp;sprawdzić w&nbsp;akcji. Wy zapewniacie salę, a&nbsp;my przyjeżdżamy ze sprzętem i&nbsp;prowadzimy całe zajęcia. Cena jest stała za grupę, nie za ucznia.</p>
         </header>
 
-        <!-- Wizualizacja: do 15 uczniów = do 5 zestawów × 3 osoby -->
+        <!-- Przykładowy podział na zespoły -->
         <figure class="squad" aria-labelledby="squad-cap">
           <ul class="squad-teams" aria-hidden="true">
             <li><span class="kid"></span><span class="kid"></span><span class="kid"></span><span class="mini-brick"></span></li>
@@ -371,9 +433,9 @@
           <figcaption id="squad-cap" class="squad-cap">
             <span><b class="pix">5–15</b> uczniów w&nbsp;grupie</span>
             <span class="squad-x" aria-hidden="true">·</span>
-            <span><b class="pix">3</b> osoby na zestaw</span>
+            <span><b class="pix">2–3</b> osoby na zestaw</span>
             <span class="squad-x" aria-hidden="true">·</span>
-            <span><b class="pix">2–3</b> godziny zajęć</span>
+            <span><b class="pix">2,5–3</b> godziny zajęć</span>
           </figcaption>
         </figure>
 
@@ -383,7 +445,7 @@
             <p class="plan-price">400 <small>zł za zajęcia</small></p>
             <p class="plan-desc">Jedno spotkanie na start. Idealne na dzień otwarty, dzień dziecka albo żeby sprawdzić, czy robotyka „zaskoczy” w&nbsp;klasie.</p>
             <ul class="plan-list">
-              <li>2–3 godziny zajęć</li>
+              <li>2,5–3 godziny zajęć</li>
               <li>grupa 5–15 uczniów</li>
               <li>sprzęt i&nbsp;dojazd w&nbsp;cenie</li>
               <li>każdy zespół buduje i&nbsp;programuje robota</li>
@@ -396,11 +458,11 @@
             <p class="plan-price">300 <small>zł za zajęcia</small></p>
             <p class="plan-desc">Regularne spotkania, np. raz w&nbsp;tygodniu. Cały program kursu: od pierwszego obrotu kółka do własnego robota.</p>
             <ul class="plan-list">
-              <li>10 spotkań po 2–3 godziny</li>
+              <li>10 spotkań po 2,5–3 godziny</li>
               <li>razem 3000&nbsp;zł zamiast 4000&nbsp;zł</li>
               <li>grupa 5–15 uczniów</li>
               <li>sprzęt i&nbsp;dojazd w&nbsp;cenie</li>
-              <li>6 modułów programu i&nbsp;projekt własny</li>
+              <li>6 modułów programu i&nbsp;możliwość zrobienia własnego projektu</li>
             </ul>
             <a class="btn btn-amber" href="#zapisy">Zamów pakiet 10 zajęć</a>
           </li>
@@ -420,8 +482,9 @@
           <div>
             <h3>W cenie</h3>
             <ul class="tick-list">
-              <li>zestawy robotów NXT (1 zestaw na 3 uczniów, do 5 zestawów)</li>
-              <li>dojazd do szkoły</li>
+              <li>zestawy do robotyki NXT (jeden zestaw na 2–3 osoby)</li>
+              <li>komputery do programowania robotów</li>
+              <li>dojazd do szkoły na terenie całego Wrocławia</li>
               <li>przygotowanie i&nbsp;poprowadzenie zajęć</li>
               <li>program NXT Studio</li>
             </ul>
@@ -430,7 +493,6 @@
             <h3>Po stronie szkoły</h3>
             <ul class="tick-list tick-list-plain">
               <li>sala ze stołami i&nbsp;gniazdkami</li>
-              <li><span class="todo" title="Do uzupełnienia">[komputery: 1 na zespół, czy przywozicie własne laptopy?]</span></li>
               <li>opiekun z&nbsp;ramienia szkoły podczas zajęć</li>
             </ul>
           </div>
@@ -449,11 +511,11 @@
         <div class="faq">
           <details>
             <summary>Jak wyglądają zajęcia w&nbsp;szkole?</summary>
-            <p>Przyjeżdżamy z&nbsp;zestawami robotów: jeden na każdą trójkę uczniów. Zajęcia trwają 2–3 godziny. Grupa od 5 do 15 uczniów dzieli się na zespoły po trzy osoby i&nbsp;każdy zespół buduje i&nbsp;programuje swojego robota. Na koniec zajęć roboty wykonują zadanie, a&nbsp;my sprzątamy i&nbsp;zabieramy sprzęt.</p>
+            <p>Przywozimy komputery i&nbsp;zestawy NXT, po jednym zestawie na 2–3 osoby. Zajęcia trwają 2,5–3 godziny. Grupa od 5 do 15 uczniów dzieli się na małe zespoły, które budują i&nbsp;programują roboty. Na koniec roboty wykonują zadanie. Potem uczniowie sami rozbierają swoje roboty i&nbsp;odkładają elementy na miejsce, a&nbsp;my sprzątamy resztę sali i&nbsp;zabieramy sprzęt.</p>
           </details>
           <details>
-            <summary>Dlaczego trzy osoby na zestaw?</summary>
-            <p>Bo robotyka to praca zespołowa. W&nbsp;trójce jedna osoba buduje, druga programuje, trzecia testuje, a&nbsp;co jakiś czas się zamieniają. Każdy ma co robić, a&nbsp;przy okazji uczy się współpracy.</p>
+            <summary>Dlaczego 2–3 osoby na zestaw?</summary>
+            <p>W&nbsp;małym zespole każdy może spróbować budowania, programowania i&nbsp;testowania. Uczniowie dzielą się zadaniami i&nbsp;zamieniają rolami w&nbsp;trakcie zajęć.</p>
           </details>
           <details>
             <summary>Czy uczniowie muszą umieć programować?</summary>
@@ -475,7 +537,7 @@
           </details>
           <details>
             <summary>Co szkoła musi zapewnić?</summary>
-            <p>Salę ze stołami i&nbsp;dostępem do gniazdek oraz opiekuna z&nbsp;ramienia szkoły. <span class="todo" title="Do uzupełnienia">[Komputery: czy przywozicie własne laptopy, czy korzystacie z pracowni szkoły?]</span></p>
+            <p>Salę ze stołami i&nbsp;dostępem do gniazdek oraz opiekuna z&nbsp;ramienia szkoły. Komputery do programowania przywozimy ze sobą.</p>
           </details>
           <details>
             <summary>Co, jeśli uczeń zepsuje lub zgubi sprzęt?</summary>
@@ -565,7 +627,7 @@
         <h2 class="foot-h">Usługodawca</h2>
         <address>
           Aleksander Sobczyk (Botix)<br>
-          <span class="todo" title="Do uzupełnienia">[ulica, nr, kod pocztowy, miasto]</span><br>
+          ul. Grawerska 20B, 51-180 Wrocław<br>
           Działalność nierejestrowana<br>
           <a href="mailto:kontakt@botix.pl">kontakt@botix.pl</a>
         </address>
